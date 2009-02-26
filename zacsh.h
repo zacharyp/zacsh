@@ -1,8 +1,3 @@
-/* CS201: Assignment #3
- * Zachary Pitts
- * zacsh.h
- */
-
 //Constants
 #define LINEMAX 1024
 #define MAXARGV 256

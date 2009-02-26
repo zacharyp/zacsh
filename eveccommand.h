@@ -1,9 +1,3 @@
-/* CS201: Assignment #3
- * Zachary Pitts
- * eveccommand.h
- */
-
-
 //Types
 typedef void handler_t(int);
 

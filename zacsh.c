@@ -1,8 +1,3 @@
-/* CS201: Assignment #3
- * Zachary Pitts
- * zacsh.c
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

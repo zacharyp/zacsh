@@ -1,8 +1,3 @@
-/* CS201: Assignment #3
- * Zachary Pitts
- * history.h
- */
-
 #define HISTORYMAX 10
 
 //Struct

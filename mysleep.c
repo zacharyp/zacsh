@@ -1,7 +1,3 @@
-/* CS201: Assignment #3
- * Zachary Pitts
- * mysleep.c
- */
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
