@@ -28,7 +28,7 @@ void history_free()
 			//loop until back at the original tail location, then stop
 			if(tail->next != orig_tail)
 				tail = tail->next;
-			else 
+			else
 				tail = NULL;
 
 			if(temp->command_text)
@@ -41,7 +41,7 @@ void history_free()
 
 
 /* history_exec
- * Function will execute the command in the history indicated by the passed 
+ * Function will execute the command in the history indicated by the passed
  * integer, that should be between 1 and HISTORYMAX.
  */
 void history_exec(int history_number)
@@ -75,7 +75,7 @@ void history_exec(int history_number)
 
 
 /* history_add
- * Function will add the passed char array to the history list.  If there are 
+ * Function will add the passed char array to the history list.  If there are
  * already HISTORYMAX historical items in the list, then the last item in the
  * history will be removed before the new item is added.
  */
@@ -98,7 +98,7 @@ void history_add(char * newCommand)
 		free (tofree);
 	}
 
-	if(history_size < HISTORYMAX)	
+	if(history_size < HISTORYMAX)
 		++history_size;
 
 	if(!tail)

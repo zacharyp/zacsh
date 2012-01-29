@@ -38,7 +38,7 @@ int main(int argc, char **argv)
 		strncpy(buffer, newCommand, length);
 		buffer[length] = '\0';
 
-		bg = parseLine(buffer, newargv); //Parse the new command	
+		bg = parseLine(buffer, newargv); //Parse the new command
 
 		if (!newargv[0]) //empty command, so do nothing
 			;
@@ -59,7 +59,7 @@ int main(int argc, char **argv)
 			history_add(newCommand);
 
 			if(!builtin_check(newargv))
-				eveccommand(newargv, bg);	
+				eveccommand(newargv, bg);
 		}
 	}
 
@@ -115,7 +115,7 @@ int parseLine(char * buffer, char ** argv)
 		argv[argc++] = buffer;
 		*delimiter = '\0';
 		buffer = delimiter + 1;
-		while (*buffer && (*buffer == ' '))  
+		while (*buffer && (*buffer == ' '))
 			buffer++;
 	}
 	argv[argc] = NULL;
