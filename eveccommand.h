@@ -2,7 +2,7 @@
 typedef void handler_t(int);
 
 struct job_t {              // The job struct
-   pid_t pid;              // job PID 
+   pid_t pid;              // job PID
 };
 
 //Prototypes

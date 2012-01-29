@@ -94,7 +94,7 @@ void eveccommand(char * argv[MAXARGV], int bg)
 	return;
 }
 
-	
+
 /* Fork
  * Function creates a forked child process, and returns the pid of this new
  * process.
@@ -114,7 +114,7 @@ pid_t Fork(void)
 
 
 /* unix_error
- * function for unix style errors 
+ * function for unix style errors
  */
 void unix_error(char *msg)
 {
@@ -123,7 +123,7 @@ void unix_error(char *msg)
 }
 
 
-/* Signal 
+/* Signal
  * Wrapper for the sigaction function
  */
 handler_t *Signal(int signum, handler_t *handler)
@@ -151,7 +151,7 @@ void child_reaper(int sig)
 	while (( pid = waitpid(-1, NULL, 0)) > 0)
 		jobdelete(pid);
 	if (errno != ECHILD)
-			;		
+			;
 
 	return;
 }
@@ -169,7 +169,7 @@ void initjobs()
 }
 
 
-/* jobclear 
+/* jobclear
  * Clear the job struct data
  */
 void jobclear(struct job_t *job)
